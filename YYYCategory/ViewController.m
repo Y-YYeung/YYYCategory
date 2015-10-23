@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CategoryHeader.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *temp1 = @"    ";
+    NSLog(@"%@",@([temp1 isBlankString]));
+    
+    NSString *temp2 = @" fasfsd";
+    NSLog(@"%@",@([NSString isBlankString:temp2]));
+    
 }
 
 - (void)didReceiveMemoryWarning {
