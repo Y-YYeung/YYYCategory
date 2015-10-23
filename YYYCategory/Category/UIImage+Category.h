@@ -10,5 +10,13 @@
 
 @interface UIImage (Category)
 
+/**
+ *  获取不被系统渲染的图片
+ *
+ *  @param imageName 图片名称
+ *
+ *  @return 没有被系统渲染的图片
+ */
++ (instancetype)originImage:(NSString *)imageName;
 
 @end
