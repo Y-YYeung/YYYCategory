@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (Category)
+@interface NSString (WYYCategory)
 
 /**
  *  去除字符串首位的空格

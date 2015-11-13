@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "CategoryHeader.h"
+#import "WYYCategoryHeader.h"
 
 @interface ViewController ()
 
@@ -19,11 +19,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSString *temp1 = @"    ";
-    NSLog(@"%@",@([temp1 isBlankString]));
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, 100, 35)];
     
-    NSString *temp2 = @" fasfsd";
-    NSLog(@"%@",@([NSString isBlankString:temp2]));
+    label.text = @"WYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYY挖哈哈哈哈哈哈哈哈哈哈哈哈";
+    label.backgroundColor = [UIColor orangeColor];
+    [label resizeLabelHeightToFitText];
+    
+    [self.view addSubview:label];
+    
+    UILabel *label2 = [[UILabel alloc] initWithFrame:CGRectMake(10, 300, 100, 35)];
+    label2.text = @"WYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYY挖哈哈哈哈哈哈哈哈哈哈哈哈";
+    label2.backgroundColor = [UIColor grayColor];
+    [label2 resizeLabelWidthToFitTextWithMaximumWidth:[UIScreen mainScreen].bounds.size.width - 20];
+    
+    [self.view addSubview:label2];
     
 }
 

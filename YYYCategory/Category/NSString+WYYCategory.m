@@ -6,9 +6,9 @@
 //  Copyright © 2015 Mon. All rights reserved.
 //
 
-#import "NSString+Category.h"
+#import "NSString+WYYCategory.h"
 
-@implementation NSString (Category)
+@implementation NSString (WYYCategory)
 
 - (instancetype)trimWhiteSpaceCharacterBothEnds{
     

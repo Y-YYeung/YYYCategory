@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (Category)
+@interface UIColor (WYYCategory)
 
 /**
  *  根据传入的十六进制字符串转换成相应的颜色

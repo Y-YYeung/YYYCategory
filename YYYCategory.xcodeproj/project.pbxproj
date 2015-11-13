@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F90B5E1B1BF5CB4800CD6AA4 /* UILabel+WYYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F90B5E1A1BF5CB4800CD6AA4 /* UILabel+WYYCategory.m */; };
 		F94ACF0F1BD9C8A900440CBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF0E1BD9C8A900440CBE /* main.m */; };
 		F94ACF121BD9C8A900440CBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF111BD9C8A900440CBE /* AppDelegate.m */; };
 		F94ACF151BD9C8A900440CBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF141BD9C8A900440CBE /* ViewController.m */; };
@@ -15,9 +16,9 @@
 		F94ACF1D1BD9C8A900440CBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94ACF1B1BD9C8A900440CBE /* LaunchScreen.storyboard */; };
 		F94ACF281BD9C8A900440CBE /* YYYCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF271BD9C8A900440CBE /* YYYCategoryTests.m */; };
 		F94ACF331BD9C8AA00440CBE /* YYYCategoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF321BD9C8AA00440CBE /* YYYCategoryUITests.m */; };
-		F94ACF431BD9C8EE00440CBE /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF421BD9C8EE00440CBE /* NSString+Category.m */; };
-		F94ACF461BD9C8FB00440CBE /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF451BD9C8FB00440CBE /* UIImage+Category.m */; };
-		F997B8031BDA12AE0032469C /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F997B8021BDA12AE0032469C /* UIColor+Category.m */; };
+		F94ACF431BD9C8EE00440CBE /* NSString+WYYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF421BD9C8EE00440CBE /* NSString+WYYCategory.m */; };
+		F94ACF461BD9C8FB00440CBE /* UIImage+WYYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF451BD9C8FB00440CBE /* UIImage+WYYCategory.m */; };
+		F997B8031BDA12AE0032469C /* UIColor+WYYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F997B8021BDA12AE0032469C /* UIColor+WYYCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F90B5E191BF5CB4800CD6AA4 /* UILabel+WYYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+WYYCategory.h"; sourceTree = "<group>"; };
+		F90B5E1A1BF5CB4800CD6AA4 /* UILabel+WYYCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WYYCategory.m"; sourceTree = "<group>"; };
 		F94ACF0A1BD9C8A900440CBE /* YYYCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYYCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94ACF0E1BD9C8A900440CBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F94ACF101BD9C8A900440CBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,13 +57,13 @@
 		F94ACF2E1BD9C8AA00440CBE /* YYYCategoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYYCategoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94ACF321BD9C8AA00440CBE /* YYYCategoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYYCategoryUITests.m; sourceTree = "<group>"; };
 		F94ACF341BD9C8AA00440CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F94ACF411BD9C8EE00440CBE /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
-		F94ACF421BD9C8EE00440CBE /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
-		F94ACF441BD9C8FB00440CBE /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
-		F94ACF451BD9C8FB00440CBE /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
-		F997B8011BDA12AE0032469C /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
-		F997B8021BDA12AE0032469C /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
-		F997B8051BDA19460032469C /* CategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryHeader.h; sourceTree = "<group>"; };
+		F94ACF411BD9C8EE00440CBE /* NSString+WYYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WYYCategory.h"; sourceTree = "<group>"; };
+		F94ACF421BD9C8EE00440CBE /* NSString+WYYCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WYYCategory.m"; sourceTree = "<group>"; };
+		F94ACF441BD9C8FB00440CBE /* UIImage+WYYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WYYCategory.h"; sourceTree = "<group>"; };
+		F94ACF451BD9C8FB00440CBE /* UIImage+WYYCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WYYCategory.m"; sourceTree = "<group>"; };
+		F997B8011BDA12AE0032469C /* UIColor+WYYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WYYCategory.h"; sourceTree = "<group>"; };
+		F997B8021BDA12AE0032469C /* UIColor+WYYCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WYYCategory.m"; sourceTree = "<group>"; };
+		F997B8051BDA19460032469C /* WYYCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYYCategoryHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,13 +157,15 @@
 		F94ACF401BD9C8D500440CBE /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				F997B8051BDA19460032469C /* CategoryHeader.h */,
-				F94ACF411BD9C8EE00440CBE /* NSString+Category.h */,
-				F94ACF421BD9C8EE00440CBE /* NSString+Category.m */,
-				F94ACF441BD9C8FB00440CBE /* UIImage+Category.h */,
-				F94ACF451BD9C8FB00440CBE /* UIImage+Category.m */,
-				F997B8011BDA12AE0032469C /* UIColor+Category.h */,
-				F997B8021BDA12AE0032469C /* UIColor+Category.m */,
+				F997B8051BDA19460032469C /* WYYCategoryHeader.h */,
+				F94ACF411BD9C8EE00440CBE /* NSString+WYYCategory.h */,
+				F94ACF421BD9C8EE00440CBE /* NSString+WYYCategory.m */,
+				F94ACF441BD9C8FB00440CBE /* UIImage+WYYCategory.h */,
+				F94ACF451BD9C8FB00440CBE /* UIImage+WYYCategory.m */,
+				F997B8011BDA12AE0032469C /* UIColor+WYYCategory.h */,
+				F997B8021BDA12AE0032469C /* UIColor+WYYCategory.m */,
+				F90B5E191BF5CB4800CD6AA4 /* UILabel+WYYCategory.h */,
+				F90B5E1A1BF5CB4800CD6AA4 /* UILabel+WYYCategory.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -301,9 +306,10 @@
 				F94ACF151BD9C8A900440CBE /* ViewController.m in Sources */,
 				F94ACF121BD9C8A900440CBE /* AppDelegate.m in Sources */,
 				F94ACF0F1BD9C8A900440CBE /* main.m in Sources */,
-				F94ACF431BD9C8EE00440CBE /* NSString+Category.m in Sources */,
-				F94ACF461BD9C8FB00440CBE /* UIImage+Category.m in Sources */,
-				F997B8031BDA12AE0032469C /* UIColor+Category.m in Sources */,
+				F94ACF431BD9C8EE00440CBE /* NSString+WYYCategory.m in Sources */,
+				F94ACF461BD9C8FB00440CBE /* UIImage+WYYCategory.m in Sources */,
+				F90B5E1B1BF5CB4800CD6AA4 /* UILabel+WYYCategory.m in Sources */,
+				F997B8031BDA12AE0032469C /* UIColor+WYYCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

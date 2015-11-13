@@ -6,9 +6,10 @@
 //  Copyright © 2015 Mon. All rights reserved.
 //
 
-#import "UIColor+Category.h"
+#import "UIColor+WYYCategory.h"
 
-@implementation UIColor (Category)
+@implementation UIColor (WYYCategory
+                         )
 
 - (instancetype)initWithHexString:(NSString *)hexStringToConvert{
     
