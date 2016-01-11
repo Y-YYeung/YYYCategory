@@ -82,4 +82,44 @@
 @property (nonatomic, assign) CGPoint origin;
 ```
 
+#### NSArray
+
+```objc
+/**
+ *
+ *  @brief NSArray 转 JSON
+ *
+ *  @return JSON 数据
+ */
+- (NSData *)JSONData;
+
+/**
+ *
+ *  @brief NSArray 转 JSON 形式的字符串
+ *
+ *  @return 具有 JSON 形式的字符串
+ */
+- (NSString *)JSONString;
+```
+
+#### NSDictionary
+
+```objc
+/**
+ *
+ *  @brief NSDictionary 转 JSON
+ *
+ *  @return JSON 数据
+ */
+- (NSData *)JSONData;
+
+/**
+ *
+ *  @brief NSDictionary 转 JSON 形式的字符串
+ *
+ *  @return 具有 JSON 形式的字符串
+ */
+- (NSString *)JSONString;
+```
+
 

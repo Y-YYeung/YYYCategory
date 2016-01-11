@@ -12,6 +12,8 @@
 		F902A6391C43FD6000DDEA2E /* UIImage+WYYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A6301C43FD6000DDEA2E /* UIImage+WYYCategory.m */; };
 		F902A63A1C43FD6000DDEA2E /* UILabel+WYYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A6331C43FD6000DDEA2E /* UILabel+WYYCategory.m */; };
 		F902A63B1C43FD6000DDEA2E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A6361C43FD6000DDEA2E /* UIView+Frame.m */; };
+		F902A65E1C44041700DDEA2E /* NSArray+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A65A1C44041700DDEA2E /* NSArray+JSON.m */; };
+		F902A65F1C44041700DDEA2E /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A65D1C44041700DDEA2E /* NSDictionary+JSON.m */; };
 		F94ACF0F1BD9C8A900440CBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF0E1BD9C8A900440CBE /* main.m */; };
 		F94ACF121BD9C8A900440CBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF111BD9C8A900440CBE /* AppDelegate.m */; };
 		F94ACF151BD9C8A900440CBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF141BD9C8A900440CBE /* ViewController.m */; };
@@ -50,6 +52,10 @@
 		F902A6331C43FD6000DDEA2E /* UILabel+WYYCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WYYCategory.m"; sourceTree = "<group>"; };
 		F902A6351C43FD6000DDEA2E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		F902A6361C43FD6000DDEA2E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		F902A6591C44041700DDEA2E /* NSArray+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSON.h"; sourceTree = "<group>"; };
+		F902A65A1C44041700DDEA2E /* NSArray+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSON.m"; sourceTree = "<group>"; };
+		F902A65C1C44041700DDEA2E /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		F902A65D1C44041700DDEA2E /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
 		F94ACF0A1BD9C8A900440CBE /* YYYCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYYCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94ACF0E1BD9C8A900440CBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F94ACF101BD9C8A900440CBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -139,6 +145,24 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
+		F902A6581C44041700DDEA2E /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				F902A6591C44041700DDEA2E /* NSArray+JSON.h */,
+				F902A65A1C44041700DDEA2E /* NSArray+JSON.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		F902A65B1C44041700DDEA2E /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				F902A65C1C44041700DDEA2E /* NSDictionary+JSON.h */,
+				F902A65D1C44041700DDEA2E /* NSDictionary+JSON.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
 		F94ACF011BD9C8A900440CBE = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +229,8 @@
 		F94ACF401BD9C8D500440CBE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F902A6581C44041700DDEA2E /* NSArray */,
+				F902A65B1C44041700DDEA2E /* NSDictionary */,
 				F997B8051BDA19460032469C /* WYYCategoryHeader.h */,
 				F902A6281C43FD6000DDEA2E /* NSString */,
 				F902A62B1C43FD6000DDEA2E /* UIColor */,
@@ -282,7 +308,6 @@
 				TargetAttributes = {
 					F94ACF091BD9C8A900440CBE = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = A9WCJZAVJ6;
 					};
 					F94ACF221BD9C8A900440CBE = {
 						CreatedOnToolsVersion = 7.1;
@@ -352,7 +377,9 @@
 				F94ACF151BD9C8A900440CBE /* ViewController.m in Sources */,
 				F94ACF121BD9C8A900440CBE /* AppDelegate.m in Sources */,
 				F902A6381C43FD6000DDEA2E /* UIColor+WYYCategory.m in Sources */,
+				F902A65E1C44041700DDEA2E /* NSArray+JSON.m in Sources */,
 				F902A6391C43FD6000DDEA2E /* UIImage+WYYCategory.m in Sources */,
+				F902A65F1C44041700DDEA2E /* NSDictionary+JSON.m in Sources */,
 				F94ACF0F1BD9C8A900440CBE /* main.m in Sources */,
 				F902A6371C43FD6000DDEA2E /* NSString+WYYCategory.m in Sources */,
 				F902A63A1C43FD6000DDEA2E /* UILabel+WYYCategory.m in Sources */,
@@ -494,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = YYYCategory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.monwingyeung.YYYCategory;
@@ -505,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = YYYCategory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.monwingyeung.YYYCategory;
