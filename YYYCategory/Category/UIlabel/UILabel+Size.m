@@ -6,9 +6,9 @@
 //  Copyright © 2015 Mon. All rights reserved.
 //
 
-#import "UILabel+WYYCategory.h"
+#import "UILabel+Size.h"
 
-@implementation UILabel (WYYCategory)
+@implementation UILabel (Size)
 
 /**
  *  重新设置 label 高度来适应文本

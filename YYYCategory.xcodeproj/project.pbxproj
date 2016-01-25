@@ -10,7 +10,7 @@
 		F902A6371C43FD6000DDEA2E /* NSString+WYYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A62A1C43FD6000DDEA2E /* NSString+WYYCategory.m */; };
 		F902A6381C43FD6000DDEA2E /* UIColor+WYYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A62D1C43FD6000DDEA2E /* UIColor+WYYCategory.m */; };
 		F902A6391C43FD6000DDEA2E /* UIImage+WYYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A6301C43FD6000DDEA2E /* UIImage+WYYCategory.m */; };
-		F902A63A1C43FD6000DDEA2E /* UILabel+WYYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A6331C43FD6000DDEA2E /* UILabel+WYYCategory.m */; };
+		F902A63A1C43FD6000DDEA2E /* UILabel+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A6331C43FD6000DDEA2E /* UILabel+Size.m */; };
 		F902A63B1C43FD6000DDEA2E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A6361C43FD6000DDEA2E /* UIView+Frame.m */; };
 		F902A65E1C44041700DDEA2E /* NSArray+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A65A1C44041700DDEA2E /* NSArray+JSON.m */; };
 		F902A65F1C44041700DDEA2E /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A65D1C44041700DDEA2E /* NSDictionary+JSON.m */; };
@@ -48,8 +48,8 @@
 		F902A62D1C43FD6000DDEA2E /* UIColor+WYYCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WYYCategory.m"; sourceTree = "<group>"; };
 		F902A62F1C43FD6000DDEA2E /* UIImage+WYYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WYYCategory.h"; sourceTree = "<group>"; };
 		F902A6301C43FD6000DDEA2E /* UIImage+WYYCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WYYCategory.m"; sourceTree = "<group>"; };
-		F902A6321C43FD6000DDEA2E /* UILabel+WYYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+WYYCategory.h"; sourceTree = "<group>"; };
-		F902A6331C43FD6000DDEA2E /* UILabel+WYYCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WYYCategory.m"; sourceTree = "<group>"; };
+		F902A6321C43FD6000DDEA2E /* UILabel+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Size.h"; sourceTree = "<group>"; };
+		F902A6331C43FD6000DDEA2E /* UILabel+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Size.m"; sourceTree = "<group>"; };
 		F902A6351C43FD6000DDEA2E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		F902A6361C43FD6000DDEA2E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		F902A6591C44041700DDEA2E /* NSArray+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSON.h"; sourceTree = "<group>"; };
@@ -72,7 +72,6 @@
 		F94ACF2E1BD9C8AA00440CBE /* YYYCategoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYYCategoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94ACF321BD9C8AA00440CBE /* YYYCategoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYYCategoryUITests.m; sourceTree = "<group>"; };
 		F94ACF341BD9C8AA00440CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F997B8051BDA19460032469C /* WYYCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYYCategoryHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +129,8 @@
 		F902A6311C43FD6000DDEA2E /* UIlabel */ = {
 			isa = PBXGroup;
 			children = (
-				F902A6321C43FD6000DDEA2E /* UILabel+WYYCategory.h */,
-				F902A6331C43FD6000DDEA2E /* UILabel+WYYCategory.m */,
+				F902A6321C43FD6000DDEA2E /* UILabel+Size.h */,
+				F902A6331C43FD6000DDEA2E /* UILabel+Size.m */,
 			);
 			path = UIlabel;
 			sourceTree = "<group>";
@@ -231,7 +230,6 @@
 			children = (
 				F902A6581C44041700DDEA2E /* NSArray */,
 				F902A65B1C44041700DDEA2E /* NSDictionary */,
-				F997B8051BDA19460032469C /* WYYCategoryHeader.h */,
 				F902A6281C43FD6000DDEA2E /* NSString */,
 				F902A62B1C43FD6000DDEA2E /* UIColor */,
 				F902A62E1C43FD6000DDEA2E /* UIImage */,
@@ -382,7 +380,7 @@
 				F902A65F1C44041700DDEA2E /* NSDictionary+JSON.m in Sources */,
 				F94ACF0F1BD9C8A900440CBE /* main.m in Sources */,
 				F902A6371C43FD6000DDEA2E /* NSString+WYYCategory.m in Sources */,
-				F902A63A1C43FD6000DDEA2E /* UILabel+WYYCategory.m in Sources */,
+				F902A63A1C43FD6000DDEA2E /* UILabel+Size.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

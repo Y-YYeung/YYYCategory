@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UILabel (WYYCategory)
+@interface UILabel (Size)
 
 /**
  *  重新设置 label 高度来适应文本
