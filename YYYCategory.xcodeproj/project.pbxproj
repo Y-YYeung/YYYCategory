@@ -22,6 +22,7 @@
 		F94ACF1D1BD9C8A900440CBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94ACF1B1BD9C8A900440CBE /* LaunchScreen.storyboard */; };
 		F94ACF281BD9C8A900440CBE /* YYYCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF271BD9C8A900440CBE /* YYYCategoryTests.m */; };
 		F94ACF331BD9C8AA00440CBE /* YYYCategoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF321BD9C8AA00440CBE /* YYYCategoryUITests.m */; };
+		F985BCD21C639C0E00C5AC61 /* UIScrollView+ScrollDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = F985BCD11C639C0E00C5AC61 /* UIScrollView+ScrollDirection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		F94ACF2E1BD9C8AA00440CBE /* YYYCategoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYYCategoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94ACF321BD9C8AA00440CBE /* YYYCategoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYYCategoryUITests.m; sourceTree = "<group>"; };
 		F94ACF341BD9C8AA00440CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F985BCD01C639C0E00C5AC61 /* UIScrollView+ScrollDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ScrollDirection.h"; sourceTree = "<group>"; };
+		F985BCD11C639C0E00C5AC61 /* UIScrollView+ScrollDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScrollDirection.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +231,7 @@
 		F94ACF401BD9C8D500440CBE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F985BCCF1C639BDD00C5AC61 /* UIScrollView */,
 				F902A6581C44041700DDEA2E /* NSArray */,
 				F902A65B1C44041700DDEA2E /* NSDictionary */,
 				F902A6281C43FD6000DDEA2E /* NSString */,
@@ -237,6 +241,15 @@
 				F902A6341C43FD6000DDEA2E /* UIView */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		F985BCCF1C639BDD00C5AC61 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F985BCD01C639C0E00C5AC61 /* UIScrollView+ScrollDirection.h */,
+				F985BCD11C639C0E00C5AC61 /* UIScrollView+ScrollDirection.m */,
+			);
+			path = UIScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,6 +388,7 @@
 				F94ACF151BD9C8A900440CBE /* ViewController.m in Sources */,
 				F94ACF121BD9C8A900440CBE /* AppDelegate.m in Sources */,
 				F902A6381C43FD6000DDEA2E /* UIColor+WYYCategory.m in Sources */,
+				F985BCD21C639C0E00C5AC61 /* UIScrollView+ScrollDirection.m in Sources */,
 				F902A65E1C44041700DDEA2E /* NSArray+JSON.m in Sources */,
 				F902A6391C43FD6000DDEA2E /* UIImage+WYYCategory.m in Sources */,
 				F902A65F1C44041700DDEA2E /* NSDictionary+JSON.m in Sources */,

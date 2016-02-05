@@ -129,4 +129,24 @@
 - (NSString *)JSONString;
 ```
 
+#### UIScrollView
+
+```objc
+
+typedef enum : NSUInteger {
+    ScrollDirectionNone,
+    ScrollDirectionUp,
+    ScrollDirectionDown,
+} ScrollDirection;
+
+/**
+ *
+ *  @brief detect which direction the scroll view is scrolling
+ *         only for vertical direction now
+ *
+ *  @return direction the scroll view is scrolling
+ */
+- (ScrollDirection)scrollDirection;
+```
+
 
