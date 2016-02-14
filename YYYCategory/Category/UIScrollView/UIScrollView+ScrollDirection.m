@@ -11,8 +11,6 @@
 
 @implementation UIScrollView (ScrollDirection)
 
-@dynamic lastContentOffsetY;
-
 - (void)setLastContentOffsetY:(CGFloat)lastContentOffsetY{
     objc_setAssociatedObject(self, @selector(lastContentOffsetY), @(lastContentOffsetY), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

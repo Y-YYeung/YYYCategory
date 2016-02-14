@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "MyNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [self testScrollView];
+    [self.window makeKeyAndVisible];
+    
     return YES;
+}
+
+- (UIViewController *)testNavigationBar{
+    
+    ViewController *ctrl = [[ViewController alloc] init];
+    ctrl.view.backgroundColor = [UIColor yellowColor];
+    ctrl.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"HAH" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:ctrl];
+//    nc.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"HAH" style:UIBarButtonItemStylePlain target:nil action:nil];
+    [nc.navigationBar.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        if ([obj isKindOfClass:NSClassFromString(@"UINavigationItemView")]) {
+//            obj.alpha = 0.0;
+//        }
+        obj.alpha = 0.0;
+    }];
+    
+    return nc;
+}
+
+- (UIViewController *)testScrollView{
+    ViewController *ctrl = [[ViewController alloc] init];
+    ctrl.view.backgroundColor = [UIColor whiteColor];
+    
+    return ctrl;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

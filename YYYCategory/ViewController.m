@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "UILabel+Size.h"
+#import "UIView+Frame.h"
+#import "UIScrollView+ScrollDirection.h"
+#import "UINavigationBar+BackgroundEffect.h"
 
 
 @interface ViewController ()
@@ -20,20 +23,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, 100, 35)];
-    
-    label.text = @"WYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYY挖哈哈哈哈哈哈哈哈哈哈哈哈";
-    label.backgroundColor = [UIColor orangeColor];
-    [label resizeLabelHeightToFitText];
+    UILabel *label      = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, 0, 0)];
+    label.font          = [UIFont systemFontOfSize:17.f weight:8.f];
+    label.text          = @"God help me";
+    label.numberOfLines = 1;
+    label.size = [UILabel labelSizeConstraintToTextWithMaximumHeight:40.f string:label.text font:label.font horizontalMargin:10.f];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.backgroundColor    = [UIColor orangeColor];
+    label.layer.cornerRadius = 10.f;
+    label.clipsToBounds = YES;
     
     [self.view addSubview:label];
-    
-    UILabel *label2 = [[UILabel alloc] initWithFrame:CGRectMake(10, 300, 100, 35)];
-    label2.text = @"WYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYYWYY挖哈哈哈哈哈哈哈哈哈哈哈哈";
-    label2.backgroundColor = [UIColor grayColor];
-    [label2 resizeLabelWidthToFitTextWithMaximumWidth:[UIScreen mainScreen].bounds.size.width - 20];
-    
-    [self.view addSubview:label2];
     
 }
 

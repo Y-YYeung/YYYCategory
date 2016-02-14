@@ -14,6 +14,8 @@
 		F902A63B1C43FD6000DDEA2E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A6361C43FD6000DDEA2E /* UIView+Frame.m */; };
 		F902A65E1C44041700DDEA2E /* NSArray+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A65A1C44041700DDEA2E /* NSArray+JSON.m */; };
 		F902A65F1C44041700DDEA2E /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F902A65D1C44041700DDEA2E /* NSDictionary+JSON.m */; };
+		F93567FB1C64410700384BF8 /* MyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93567FA1C64410700384BF8 /* MyNavigationController.m */; };
+		F93567FE1C644AD600384BF8 /* UINavigationBar+BackgroundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = F93567FD1C644AD600384BF8 /* UINavigationBar+BackgroundEffect.m */; };
 		F94ACF0F1BD9C8A900440CBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF0E1BD9C8A900440CBE /* main.m */; };
 		F94ACF121BD9C8A900440CBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF111BD9C8A900440CBE /* AppDelegate.m */; };
 		F94ACF151BD9C8A900440CBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF141BD9C8A900440CBE /* ViewController.m */; };
@@ -57,6 +59,10 @@
 		F902A65A1C44041700DDEA2E /* NSArray+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSON.m"; sourceTree = "<group>"; };
 		F902A65C1C44041700DDEA2E /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
 		F902A65D1C44041700DDEA2E /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
+		F93567F91C64410700384BF8 /* MyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavigationController.h; sourceTree = "<group>"; };
+		F93567FA1C64410700384BF8 /* MyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavigationController.m; sourceTree = "<group>"; };
+		F93567FC1C644AD600384BF8 /* UINavigationBar+BackgroundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+BackgroundEffect.h"; sourceTree = "<group>"; };
+		F93567FD1C644AD600384BF8 /* UINavigationBar+BackgroundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+BackgroundEffect.m"; sourceTree = "<group>"; };
 		F94ACF0A1BD9C8A900440CBE /* YYYCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYYCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94ACF0E1BD9C8A900440CBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F94ACF101BD9C8A900440CBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -165,6 +171,28 @@
 			path = NSDictionary;
 			sourceTree = "<group>";
 		};
+		F93567F71C6440AD00384BF8 /* UINavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				F93567FC1C644AD600384BF8 /* UINavigationBar+BackgroundEffect.h */,
+				F93567FD1C644AD600384BF8 /* UINavigationBar+BackgroundEffect.m */,
+			);
+			path = UINavigationBar;
+			sourceTree = "<group>";
+		};
+		F93567F81C6440D700384BF8 /* Test Files */ = {
+			isa = PBXGroup;
+			children = (
+				F94ACF101BD9C8A900440CBE /* AppDelegate.h */,
+				F94ACF111BD9C8A900440CBE /* AppDelegate.m */,
+				F94ACF131BD9C8A900440CBE /* ViewController.h */,
+				F94ACF141BD9C8A900440CBE /* ViewController.m */,
+				F93567F91C64410700384BF8 /* MyNavigationController.h */,
+				F93567FA1C64410700384BF8 /* MyNavigationController.m */,
+			);
+			name = "Test Files";
+			sourceTree = "<group>";
+		};
 		F94ACF011BD9C8A900440CBE = {
 			isa = PBXGroup;
 			children = (
@@ -189,10 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				F94ACF401BD9C8D500440CBE /* Category */,
-				F94ACF101BD9C8A900440CBE /* AppDelegate.h */,
-				F94ACF111BD9C8A900440CBE /* AppDelegate.m */,
-				F94ACF131BD9C8A900440CBE /* ViewController.h */,
-				F94ACF141BD9C8A900440CBE /* ViewController.m */,
+				F93567F81C6440D700384BF8 /* Test Files */,
 				F94ACF161BD9C8A900440CBE /* Main.storyboard */,
 				F94ACF191BD9C8A900440CBE /* Assets.xcassets */,
 				F94ACF1B1BD9C8A900440CBE /* LaunchScreen.storyboard */,
@@ -231,6 +256,7 @@
 		F94ACF401BD9C8D500440CBE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F93567F71C6440AD00384BF8 /* UINavigationBar */,
 				F985BCCF1C639BDD00C5AC61 /* UIScrollView */,
 				F902A6581C44041700DDEA2E /* NSArray */,
 				F902A65B1C44041700DDEA2E /* NSDictionary */,
@@ -387,12 +413,14 @@
 				F902A63B1C43FD6000DDEA2E /* UIView+Frame.m in Sources */,
 				F94ACF151BD9C8A900440CBE /* ViewController.m in Sources */,
 				F94ACF121BD9C8A900440CBE /* AppDelegate.m in Sources */,
+				F93567FE1C644AD600384BF8 /* UINavigationBar+BackgroundEffect.m in Sources */,
 				F902A6381C43FD6000DDEA2E /* UIColor+WYYCategory.m in Sources */,
 				F985BCD21C639C0E00C5AC61 /* UIScrollView+ScrollDirection.m in Sources */,
 				F902A65E1C44041700DDEA2E /* NSArray+JSON.m in Sources */,
 				F902A6391C43FD6000DDEA2E /* UIImage+WYYCategory.m in Sources */,
 				F902A65F1C44041700DDEA2E /* NSDictionary+JSON.m in Sources */,
 				F94ACF0F1BD9C8A900440CBE /* main.m in Sources */,
+				F93567FB1C64410700384BF8 /* MyNavigationController.m in Sources */,
 				F902A6371C43FD6000DDEA2E /* NSString+WYYCategory.m in Sources */,
 				F902A63A1C43FD6000DDEA2E /* UILabel+Size.m in Sources */,
 			);

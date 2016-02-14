@@ -16,9 +16,6 @@ typedef enum : NSUInteger {
 
 @interface UIScrollView (ScrollDirection)
 
-// last time the offset.y of content offset
-@property (nonatomic, assign) CGFloat lastContentOffsetY;
-
 /**
  *  @author Mon
  *

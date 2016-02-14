@@ -10,56 +10,58 @@
 
 @implementation UILabel (Size)
 
-/**
- *  重新设置 label 高度来适应文本
- */
-- (void)resizeLabelHeightToFitText{
+- (void)resizeLabelHeightToFitTextWithMaximumHeight:(CGFloat)maxHeight{
     
-    // 设置自动行数
     self.numberOfLines = 0;
-    
-    // 设置换行模式
     self.lineBreakMode = NSLineBreakByWordWrapping;
+    CGSize size = CGSizeMake(0, maxHeight);
     
-    // 以宽度为标准，创建一个高度超级大的 size
-    CGSize size = CGSizeMake(self.frame.size.width, 0);
-    
-    // 计算 label 实际大小，算上字体
     NSDictionary *attributes = @{NSFontAttributeName:self.font};
     
     CGSize realSize = [self.text boundingRectWithSize:size
                                               options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
                                            attributes:attributes context:nil].size;
     
-    // 设置大小
     self.frame = CGRectMake(CGRectGetMinX(self.frame), CGRectGetMinY(self.frame), realSize.width, realSize.height);
 }
 
-/**
- *  重新设置 label 宽度和高度来适应文本
- *
- *  @param maxWidth label 的最大宽度
- */
++ (CGSize)labelSizeConstraintToTextWithMaximumHeight:(CGFloat)maxHeight string:(NSString *)aString font:(UIFont *)font horizontalMargin:(CGFloat)margin{
+    CGSize size = CGSizeMake(0, maxHeight);
+    NSDictionary *attributes = @{NSFontAttributeName:font};
+    
+    CGSize realSize = [aString boundingRectWithSize:size
+                                              options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                           attributes:attributes context:nil].size;
+    
+    realSize = CGSizeMake(realSize.width + 2 * margin, realSize.height);
+    return realSize;
+}
+
 - (void)resizeLabelWidthToFitTextWithMaximumWidth:(CGFloat)maxWidth{
     
-    // 设置自动行数
     self.numberOfLines = 0;
-    
-    // 设置换行模式
     self.lineBreakMode = NSLineBreakByWordWrapping;
-    
-    // 以宽度为标准，创建一个高度超级大的 size
     CGSize size = CGSizeMake(maxWidth, 0);
     
-    // 计算 label 实际大小，算上字体
     NSDictionary *attributes = @{NSFontAttributeName:self.font};
     
     CGSize realSize = [self.text boundingRectWithSize:size
                                               options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
                                            attributes:attributes context:nil].size;
     
-    // 设置大小
     self.frame = CGRectMake(CGRectGetMinX(self.frame), CGRectGetMinY(self.frame), realSize.width, realSize.height);
+}
+
++ (CGSize)labelSizeConstraintToContentWithMaximumWidth:(CGFloat)maxWidth string:(NSString *)aString font:(UIFont *)font verticalMargin:(CGFloat)margin{
+    CGSize size = CGSizeMake(maxWidth, 0);
+    NSDictionary *attributes = @{NSFontAttributeName:font};
+    
+    CGSize realSize = [aString boundingRectWithSize:size
+                                            options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                         attributes:attributes context:nil].size;
+    
+    realSize = CGSizeMake(realSize.width, realSize.height + 2 * margin);
+    return realSize;
 }
 
 @end
