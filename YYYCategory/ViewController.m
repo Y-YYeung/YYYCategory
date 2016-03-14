@@ -7,10 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UILabel+Size.h"
-#import "UIView+Frame.h"
-#import "UIScrollView+ScrollDirection.h"
-#import "UINavigationBar+BackgroundEffect.h"
+#import "UIButton+BlockAction.h"
 
 
 @interface ViewController ()
@@ -23,23 +20,47 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UILabel *label      = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, 0, 0)];
-    label.font          = [UIFont systemFontOfSize:17.f weight:8.f];
-    label.text          = @"God help me";
-    label.numberOfLines = 1;
-    label.size = [UILabel labelSizeConstraintToTextWithMaximumHeight:40.f string:label.text font:label.font horizontalMargin:10.f];
-    label.textAlignment = NSTextAlignmentCenter;
-    label.backgroundColor    = [UIColor orangeColor];
-    label.layer.cornerRadius = 10.f;
-    label.clipsToBounds = YES;
+    UIButton *normalButton1 = [UIButton buttonWithType:UIButtonTypeSystem];
+    normalButton1.frame = CGRectMake(100, 100, 200.f, 40.f);
+    [normalButton1 setTitle:@"Normal one" forState:UIControlStateNormal];
+    [normalButton1 addTarget:self action:@selector(action1) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:normalButton1];
     
-    [self.view addSubview:label];
+    UIButton *normalButton2 = [UIButton buttonWithType:UIButtonTypeSystem];
+    normalButton2.frame = CGRectMake(CGRectGetMinX(normalButton1.frame), CGRectGetMaxY(normalButton1.frame) + 10.f, 200.f, 40.f);
+    [normalButton2 setTitle:@"Normal one 2" forState:UIControlStateNormal];
+    [normalButton2 addTarget:self action:@selector(action1:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:normalButton2];
     
+    UIButton *blockButton1 = [UIButton buttonWithType:UIButtonTypeSystem];
+    blockButton1.frame = CGRectMake(100.f, CGRectGetMaxY(normalButton2.frame) + 50.f, 200.f, 40.f);
+    [blockButton1 handleControlEvent:UIControlEventTouchUpInside block:^{
+        NSLog(@"block button");
+    }];
+    [blockButton1 setTitle:@"block button 1" forState:UIControlStateNormal];
+    [self.view addSubview:blockButton1];
+    
+    UIButton *blockButton2 = [UIButton buttonWithType:UIButtonTypeSystem];
+    blockButton2.frame = CGRectMake(100.f, CGRectGetMaxY(blockButton1.frame) + 10.f, 200.f, 40.f);
+    [blockButton2 handleControlEvent:UIControlEventTouchUpInside senderblock:^(id sender) {
+        NSLog(@"block button: %@", sender);
+    }];
+    [blockButton2 setTitle:@"block button 1" forState:UIControlStateNormal];
+    [self.view addSubview:blockButton2];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)action1{
+    NSLog(@"normal one");
+}
+
+- (void)action1:(id)sender{
+    NSLog(@"normal one: %@", sender);
+}
+
 
 @end

@@ -24,6 +24,7 @@
 		F94ACF1D1BD9C8A900440CBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94ACF1B1BD9C8A900440CBE /* LaunchScreen.storyboard */; };
 		F94ACF281BD9C8A900440CBE /* YYYCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF271BD9C8A900440CBE /* YYYCategoryTests.m */; };
 		F94ACF331BD9C8AA00440CBE /* YYYCategoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F94ACF321BD9C8AA00440CBE /* YYYCategoryUITests.m */; };
+		F9817DCA1C967F5800616357 /* UIButton+BlockAction.m in Sources */ = {isa = PBXBuildFile; fileRef = F9817DC91C967F5800616357 /* UIButton+BlockAction.m */; };
 		F985BCD21C639C0E00C5AC61 /* UIScrollView+ScrollDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = F985BCD11C639C0E00C5AC61 /* UIScrollView+ScrollDirection.m */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,8 @@
 		F94ACF2E1BD9C8AA00440CBE /* YYYCategoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYYCategoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94ACF321BD9C8AA00440CBE /* YYYCategoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYYCategoryUITests.m; sourceTree = "<group>"; };
 		F94ACF341BD9C8AA00440CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9817DC81C967F5800616357 /* UIButton+BlockAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BlockAction.h"; sourceTree = "<group>"; };
+		F9817DC91C967F5800616357 /* UIButton+BlockAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BlockAction.m"; sourceTree = "<group>"; };
 		F985BCD01C639C0E00C5AC61 /* UIScrollView+ScrollDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ScrollDirection.h"; sourceTree = "<group>"; };
 		F985BCD11C639C0E00C5AC61 /* UIScrollView+ScrollDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScrollDirection.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -264,9 +267,19 @@
 				F902A62B1C43FD6000DDEA2E /* UIColor */,
 				F902A62E1C43FD6000DDEA2E /* UIImage */,
 				F902A6311C43FD6000DDEA2E /* UIlabel */,
+				F9817DC71C967F3A00616357 /* UIButton */,
 				F902A6341C43FD6000DDEA2E /* UIView */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		F9817DC71C967F3A00616357 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				F9817DC81C967F5800616357 /* UIButton+BlockAction.h */,
+				F9817DC91C967F5800616357 /* UIButton+BlockAction.m */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 		F985BCCF1C639BDD00C5AC61 /* UIScrollView */ = {
@@ -421,6 +434,7 @@
 				F902A65F1C44041700DDEA2E /* NSDictionary+JSON.m in Sources */,
 				F94ACF0F1BD9C8A900440CBE /* main.m in Sources */,
 				F93567FB1C64410700384BF8 /* MyNavigationController.m in Sources */,
+				F9817DCA1C967F5800616357 /* UIButton+BlockAction.m in Sources */,
 				F902A6371C43FD6000DDEA2E /* NSString+WYYCategory.m in Sources */,
 				F902A63A1C43FD6000DDEA2E /* UILabel+Size.m in Sources */,
 			);

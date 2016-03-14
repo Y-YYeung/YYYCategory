@@ -17,7 +17,7 @@
  *
  *  @param maxHeight the max height
  */
-- (void)resizeLabelHeightToFitContentWithMaximumHeight:(CGFloat)maxHeight;
+- (void)resizeLabelHeightToFitTextWithMaximumHeight:(CGFloat)maxHeight;
 
 /**
  *  @author Mon
