@@ -12,6 +12,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) NSMutableArray *btns;
+
 @end
 
 @implementation ViewController
@@ -32,6 +34,8 @@
     [normalButton2 addTarget:self action:@selector(action1:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:normalButton2];
     
+    _btns = [NSMutableArray arrayWithCapacity:2];
+    
     UIButton *blockButton1 = [UIButton buttonWithType:UIButtonTypeSystem];
     blockButton1.frame = CGRectMake(100.f, CGRectGetMaxY(normalButton2.frame) + 50.f, 200.f, 40.f);
     [blockButton1 handleControlEvent:UIControlEventTouchUpInside block:^{
@@ -47,6 +51,15 @@
     }];
     [blockButton2 setTitle:@"block button 1" forState:UIControlStateNormal];
     [self.view addSubview:blockButton2];
+    
+    [_btns addObject:blockButton1];
+    [_btns addObject:blockButton2];
+    
+    UIButton *btnRemove = [UIButton buttonWithType:UIButtonTypeSystem];
+    btnRemove.frame = CGRectMake(100.f, CGRectGetMaxY(blockButton2.frame) + 10.f, 200.f, 200.f);
+    [btnRemove setTitle:@"Remove" forState:UIControlStateNormal];
+    [btnRemove addTarget:self action:@selector(actionRemove) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnRemove];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,7 +72,15 @@
 }
 
 - (void)action1:(id)sender{
+    NSLog(@"Retain count is %ld", CFGetRetainCount((__bridge CFTypeRef)sender));
     NSLog(@"normal one: %@", sender);
+}
+
+- (void)actionRemove{
+    UIButton *btn = self.btns[0];
+    NSLog(@"Retain count is %ld", CFGetRetainCount((__bridge CFTypeRef)btn));
+    [btn removeFromSuperview];
+    [self.btns removeObjectAtIndex:0];
 }
 
 

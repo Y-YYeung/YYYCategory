@@ -106,7 +106,7 @@
 
 - (void)setTop:(CGFloat)top{
     CGRect frame = self.frame;
-    frame.origin.x = top;
+    frame.origin.y = top;
     self.frame = frame;
 }
 
